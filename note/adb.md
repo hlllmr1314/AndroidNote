@@ -17,8 +17,9 @@
     - adb disconnect <device-ip-address>
 - 安装 APK
     - adb install [-lrtsdg] <path_to_apk>
+
       |参数 |	含义|
-        ---|---
+      |------------ | ------------ |
       |-l	|将应用安装到保护目录 /mnt/asec|
       |-r	|允许覆盖安装|
       |-t	|允许安装 AndroidManifest.xml 里 application 指定 android:testOnly="true" 的应用|
@@ -35,11 +36,10 @@
     - adb sync [DIR] 
 - 查看日志
     - [adb] logcat [<option>] ... [<filter-spec>] ...
-        
     Android 的日志分为如下几个优先级（priority）：
 
         |type|desc|
-        ---|---
+        |---|---|
         |V|Verbose（最低，输出得最多）|
         |D|Debug|
         |I|Info||
